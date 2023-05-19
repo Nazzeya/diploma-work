@@ -2,16 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-export class WaterConsumption{
-    constructor(
-      public Date:string, 
-      public Holiday:boolean, 
-      public dayOfWeek: number, 
-      public Consumption_Cold: number, 
-      public Prediction_Cold: number,
-      public Consumption_Hot: number,
-      public Prediction_Hot: number
-      ){}
+export interface WaterConsumption {
+  Date: string;
+  Holiday: number;
+  dayOfWeek: number;
+  Consumption_Cold: number;
+  Prediction_Cold: number;
+  Consumption_Hot: number;
+  Prediction_Hot: number;
 }
 
 @Injectable({

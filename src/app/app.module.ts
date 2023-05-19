@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VisualizationComponent } from './visualization/visualization.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { HighchartsChartModule } from 'highcharts-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
